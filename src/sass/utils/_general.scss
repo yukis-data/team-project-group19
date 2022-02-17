@@ -1,0 +1,42 @@
+.list {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    @media screen and (min-width: 320px) {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 660px; 
+    }
+
+    @media screen and (min-width: 1220px) {
+        max-width: 1054px;
+    }
+}
