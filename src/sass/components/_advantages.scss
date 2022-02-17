@@ -1,0 +1,76 @@
+.advantages {
+  display: block;
+
+  padding-top: 39px;
+  padding-bottom: 145px;
+  background-color: var(--second-bg-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.advantages-set {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages-set__item {
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+.milk-icon::before {
+  content: url('../images/milk.png');
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.fruits-icon::before {
+  content: url('../images/fruits.png');
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.caramel-icon::before {
+  content: url('../images/caramel.png');
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.advantages-set__heading {
+  font-family: Titan One;
+  font-style: normal;
+
+  font-size: 36px;
+  line-height: 1.07;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+
+.advantages-set__discription {
+  font-family: DM Sans;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.6;
+
+  color: var(--second-text-color);
+}
