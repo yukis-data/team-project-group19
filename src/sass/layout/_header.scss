@@ -10,7 +10,6 @@
 
 .header__logo {
   fill: var(--accent-color);
-
   margin-top: 6px;
 }
 
@@ -27,7 +26,7 @@
   cursor: pointer;
 }
 
-.header__btn {
+.header__btn-order {
   @media screen and (max-width: 767px) {
     display: none;
   }

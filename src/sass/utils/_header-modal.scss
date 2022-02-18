@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 184, 202, 0.4);
+  position: fixed;
+  top: 0;
+}
+
 .header__modal {
   width: 250px;
   height: 100vh;
@@ -29,7 +37,7 @@
   cursor: pointer;
 }
 
-.header__modal__btn-order {
+.header__btn-order__modal {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: bold;
@@ -46,12 +54,16 @@
   margin-top: 60px;
   width: 100%;
   height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
-.header__btn__after::after {
-  border: 2px solid #d41443;
-  margin-left: 16px;
-  background-color: #d41443;
+.header__modal__btn__oeder__icon {
+  margin-top: 3px;
+  margin-left: 25px;
 }
 
 .navigation__modal__list__item {
@@ -61,14 +73,17 @@
   font-size: 14px;
   line-height: 18px;
   display: flex;
-  align-items: center;
   color: #ffffff;
   border: 1px solid #e18298;
   height: 42px;
-  padding-left: 21px;
 }
 
 .navigation__modal__list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
   text-decoration: none;
   color: var(--main-text-color);
 
