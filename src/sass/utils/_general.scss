@@ -27,16 +27,16 @@ ul {
     padding-right: 20px;
     
     @media screen and (min-width: 320px) {
-        max-width: 280px;
+        // max-width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {
-        max-width: 660px; 
+        max-width: 768px; 
     }
 
-    @media screen and (min-width: 1220px) {
-        max-width: 1054px;
+    @media screen and (min-width: 1280px) {
+        max-width: 1224px;
     }
 }
