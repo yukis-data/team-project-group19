@@ -43,7 +43,7 @@ margin-top: 50px;
 }
 
 .section-about__label {
-    font-family: Titan One, cursive;
+    font-family: 'Titan One', cursive;
     font-size: 18px;
     line-height: 1.17;
     text-align: center;
@@ -63,7 +63,7 @@ margin-top: 50px;
 
 .section-about__title  { 
     margin-top: 15px;
-font-family: Titan One;
+font-family: 'Titan One';
     font-size: 34px;
     line-height: 1.14;
     text-align: center;
@@ -74,11 +74,9 @@ font-family: Titan One;
 
     @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 1.14;
     }
     @media screen and (min-width: 1200px) {
     font-size: 58px;
-    line-height: 1.14;
     }
 
 }
@@ -90,17 +88,17 @@ font-family: Titan One;
     margin: 0 auto 0 auto;
     font-weight: 500;
     font-size: 12px;
-    line-height: 162%;
+    line-height: 1.5;
     color: var(--third-text-color);
 @media screen and (min-width: 768px) {
     width: 340px;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.7;
 }
 @media screen and (min-width: 1220px) {
     width: 463px;
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.9;
     letter-spacing: 0.04em;
 
 }
