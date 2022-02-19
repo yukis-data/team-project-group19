@@ -30,19 +30,19 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 1.14;
+  line-height: 20px;
   color: var(--accent-text-color);
   margin-bottom: 17px;
 
   @media screen and( min-width:768px) {
     font-size: 26px;
-    line-height: 1.15;
+    line-height: 30px;
     letter-spacing: 0.04em;
     margin-bottom: 16px;
   }
   @media screen and( min-width:1280px) {
     font-size: 30px;
-    line-height: 1.13;
+    line-height: 34px;
     margin-bottom: 15px;
   }
 }
@@ -51,19 +51,20 @@ footer {
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  line-height: 39px;
 
   color: var(--accent-color);
   font-size: 34px;
   margin-bottom: 43px;
   @media screen and( min-width:768px) {
     font-size: 48px;
-    line-height: 1.14x;
+    line-height: 55px;
     letter-spacing: 0.04em;
     margin-bottom: 91px;
   }
   @media screen and( min-width:1280px) {
     font-size: 58px;
-    line-height: 1.13;
+    line-height: 66px;
     margin-bottom: 97px;
   }
 }
@@ -85,7 +86,7 @@ footer {
 }
 .footer-social__item {
   & + & {
-    margin-left: 28.24px;
+    margin-left: 28px;
   }
 }
 .footer-svg {
@@ -115,7 +116,7 @@ footer {
   font-family: DM Sans;
   font-size: 12px;
   font-weight: 700;
-  line-height: 1.83;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: right;
   color: #000000;
@@ -125,7 +126,7 @@ footer {
   }
   @media screen and( min-width:768px) {
     font-size: 14px;
-    line-height: 1.85;
+    line-height: 26px;
   }
   @media screen and( min-width:1280px) {
     margin-top: 50px;
@@ -163,7 +164,7 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-  @media screen and( min-width:768px) {
+  @media screen and( min-width:1200px) {
     padding-top: 9px;
   }
 }
@@ -174,7 +175,7 @@ footer {
   font-weight: 700;
   letter-spacing: 0em;
   text-align: center;
-  line-height: 1.5;
+  line-height: 21px;
   color: #907e82;
   @media screen and( min-width:768px) {
     letter-spacing: 0.02em;
