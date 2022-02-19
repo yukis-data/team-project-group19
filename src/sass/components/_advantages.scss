@@ -64,7 +64,8 @@
 }
 
 .milk-icon::before {
-  content: url('../images/advantages-img/milk.png');
+  content: '';
+  background-image: url(../images/advantages-img/milk.png);
   display: inline-block;
   margin-bottom: 15px;
 
@@ -78,7 +79,8 @@
 }
 
 .fruits-icon::before {
-  content: url('../images/advantages-img/fruits.png');
+  content: '';
+  background-image: url(../images/advantages-img/fruits.png);
   display: inline-block;
   margin-bottom: 15px;
 
@@ -92,7 +94,8 @@
 }
 
 .caramel-icon::before {
-  content: url('../images/advantages-img/caramel.png');
+  content: '';
+  background-image: url(../images/advantages-img/caramel.png);
   display: inline-block;
   margin-bottom: 15px;
 
