@@ -2,8 +2,11 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
 // Стили для файла с примером HTML-фрагмента
+
+@import 'utils/header-modal';
+@import 'layout/header';
+
 @import 'utils/variables';
 @import 'utils/general';
-@import '../sass/components/products';
+@import 'utils/is-hidden';
