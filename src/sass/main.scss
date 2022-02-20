@@ -4,7 +4,15 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+<<<<<<< Updated upstream
 @import 'utils/variables';
 @import 'utils/general';
 @import '../sass/components/products';
 @import './components/contacts.scss';
+=======
+@import './utils/variables';
+@import './utils/general';
+
+@import './components/products';
+@import './components/contacts';
+>>>>>>> Stashed changes
