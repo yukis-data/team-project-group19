@@ -1,38 +1,38 @@
 
 .section-about {
-    padding: 125px 0 40px 0;
-    max-width: 480px;
+    padding: 125px 0 0 0;
     margin: 0 auto;
     background-color: var(--second-bg-color);
-    background-image:url(/images/about/about-pic-milk-mob-x1-min.png);
+
+    @media screen and (min-width: 768px) {
+    min-width: 768px; 
+    background-image:url(../images/about/about-pic-milk-mob-x2-min.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 82%;
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/images/about/about-pic-milk-mob-x2-min.png);
-    };
-@media screen and (min-width: 768px) {
-max-width: 768px; 
-}
+    @media  (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-pic-milk-mob-x2-min.png);
+        }
+    }
 
 @media screen and (min-width: 1280px){
-max-width: 1280px; 
-background-image:url(/images/about/about-pic-milk-desk-x1-min.png);
+    min-width: 1280px;
+    background-image:url(../images/about/about-pic-milk-desk-x1-min.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 100%;
+    
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/images/about/about-pic-milk-desk-x2-min.png);
-    };
+    (min-resolution: 2dppx)
+    {   background-image: url(../images/about/about-pic-milk-desk-x2-min.png);
 }
 }
-
+}
 .about-container {
 @media screen and (min-width: 768px) {
 display: flex;
@@ -63,7 +63,7 @@ margin-top: 50px;
 
 .section-about__title  { 
     margin-top: 15px;
-font-family: 'Titan One';
+    font-family: 'Titan One';
     font-size: 34px;
     line-height: 1.14;
     text-align: center;
@@ -119,7 +119,7 @@ font-family: 'Titan One';
 height: 280px;
 width: 279px;
 margin: 26px auto 46px auto;
-    background-image:url(/images/about/about-pic-mob-x1-min.png);
+    background-image:url(../images/about/about-pic-mob-x1-min.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,19 +127,19 @@ margin: 26px auto 46px auto;
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/about/about-pic-mob-x2-min.png);
+    background-image: url(../images/about/about-pic-mob-x2-min.png);
     }
 
 @media screen and (min-width: 768px) {
 height: 340px;
 width: 339px;
 margin-right: 17px;
-    background-image: url(/images/about/about-pic-tab-x1-min.png);
+    background-image: url(../images/about/about-pic-tab-x1-min.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/about/about-pic-tab-x2-min.png); 
+    background-image: url(../images/about/about-pic-tab-x2-min.png); 
 }
 }
 @media screen and (min-width: 1280px) { 
@@ -147,12 +147,12 @@ height: 516px;
 width: 516px;
 margin-right: 74px;
 margin-left: 0;
-        background-image: url(/images/about/about-pic-desk-x1-min.png);
+        background-image: url(../images/about/about-pic-desk-x1-min.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) 
-    {background-image: url(/images/about/about-pic-desk-x2-min.png); 
+    {background-image: url(../images/about/about-pic-desk-x2-min.png); 
 }
 }
 }
@@ -173,7 +173,7 @@ margin-left: 0;
     border-radius: 22px;
     border: none;
     background-color: #FFFFFF;
-    background-image: url(/images/about/about-btn-icon.svg);
+    background-image: url(../images/about/about-btn-icon.svg);
     background-repeat: no-repeat;
     background-position: 80% 54%;
     &:hover {
