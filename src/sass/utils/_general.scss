@@ -2,14 +2,13 @@
   text-decoration: none;
   list-style: none;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0 auto;
+  margin: 0;
 }
 
 p {
@@ -19,24 +18,38 @@ p {
 
 ul {
   padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 320px) {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 660px;
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
-  @media screen and (min-width: 1220px) {
-    width: 1054px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }

@@ -2,25 +2,20 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
 // Стили для файла с примером HTML-фрагмента
-<<<<<<< Updated upstream
 @import 'utils/variables';
 @import 'utils/general';
-@import '../sass/components/products';
-<<<<<<< Updated upstream
-@import './components/contacts.scss';
-=======
-@import './utils/variables';
-@import './utils/general';
 
-@import './components/products';
-@import './components/contacts';
->>>>>>> Stashed changes
-=======
+@import 'layout/header';
+@import 'components/products';
+@import 'components/about';
+@import 'utils/header-modal';
+@import '../sass/components/hero';
 @import '../sass/components/advantages';
 @import '../sass/components/contacts';
 @import '../sass/components/_footer';
 @import 'utils/is-hidden';
+
 @import '../sass/components/franchise-modal';
->>>>>>> Stashed changes
+@import '../sass/components/about-modal-window';
+@import '../sass/components/location-modal';

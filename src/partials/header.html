@@ -1,0 +1,76 @@
+<header class="header">
+  <!-- Модальное окно меню для мобилки и таблетки -->
+  <div class="backdrop is-hidden">
+    <div class="header__modal">
+      <div class="header__modal__container">
+        <div class="header__modal__btn__container">
+          <button tapy="button" class="header__modal__btn-close">
+            <svg width="14" height="14">
+              <use href="../src/images/header-icon.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button tapy="button" class="header__btn-order__menu">
+            Buy now
+            <svg class="header__modal__btn__order__icon" width="6" height="10">
+              <use href="../src/images/header-icon.svg#icon-btn"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="navigation_modal">
+          <ul class="navigation__modal__list">
+            <li class="navigation__modal__list__item">
+              <a class="navigation__modal__list__link" href="">Home</a>
+            </li>
+            <li class="navigation__modal__list__item">
+              <a class="navigation__modal__list__link" href="">About us</a>
+            </li>
+            <li class="navigation__modal__list__item">
+              <a class="navigation__modal__list__link" href="">How it's made</a>
+            </li>
+            <li class="navigation__modal__list__item">
+              <a class="navigation__modal__list__link" href="">Our products</a>
+            </li>
+            <li class="navigation__modal__list__item">
+              <a class="navigation__modal__list__link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Лого -->
+  <div class="container">
+    <div class="header__flex__container">
+      <a class="header__logo" href="../src/index.html">
+        <picture>
+          <source
+            srcset="../src/images/logo.png 1x, ../src/images/logo@2x.png 2x"
+            media="(min-width: 280px)">
+          <img class="logo" src="../src/images/logo.png" alt="Логотип"/>
+      </a>
+      <!-- Навигация -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list__item"><a class="navigation__list__link" href="">Home</a></li>
+          <li class="navigation__list__item"><a class="navigation__list__link" href="">About us</a></li>
+          <li class="navigation__list__item"><a class="navigation__list__link" href="">How it's made?</a></li>
+          <li class="navigation__list__item"><a class="navigation__list__link" href="">Our products</a></li>
+          <li class="navigation__list__item"><a class="navigation__list__link" href="">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Меню на мобилке -->
+      <button class="header__btn__menu" tapy="button">
+        <svg class="header__btn__icon" width="20" height="12">
+          <use href="../src/images/header-icon.svg#icon-header-menu"></use>
+        </svg>
+      </button>
+      <!-- Кнопка заказа -->
+      <button class="header__btn-menu" tapy="button">
+        Buy now
+        <svg class="header__modal__btn__order__icon" width="6" height="10">
+          <use href="../src/images/header-icon.svg#icon-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
