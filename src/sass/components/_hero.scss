@@ -1,0 +1,219 @@
+.hero {
+    background-color: var(--header-bg-color);
+    padding-top: 137px;
+    padding-bottom: 160px;
+    @media screen and (min-width:768px) {
+        padding-top: 15px;
+        padding-bottom: 34px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 84px;
+        padding-bottom: 56px;
+    }
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-title {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    max-width: 218px;
+    color: var(--main-text-color);
+    text-align: left;
+    margin-bottom: 19px;
+    @media screen and (min-width:768px){
+        margin-bottom: 20px;
+        font-size: 22px;
+        max-width: 162px;
+    }
+    @media screen and (min-width:1200px){
+        max-width: 277px;
+        margin-bottom: 25px;
+        font-size: 38px;
+    }
+    & .hero-title__accent {
+        font-size: 48px;
+        line-height: 0.95;
+        color: var(--accent-color);
+        @media screen and (min-width:768px){
+            font-size: 34px;
+        }
+        @media screen and (min-width:1200px){
+            font-size: 58px;
+        }
+            
+        
+    }
+}
+
+.hero-list {
+    display: flex;
+}
+
+.hero-list__item:first-child {
+    margin-right: 8px;
+    & .hero-list__link {
+        color: var(--main-text-color);
+        background-color: var(--accent-color);
+        &:hover, &:focus {
+        background-color: var(--accent-bg-second-button);
+        }
+    }
+}
+
+.hero-list__link {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--accent-color);
+
+    padding: 8px 15px;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    &:hover, &:focus {
+        background-color: var(--accent-bg-first-button);
+    }
+}
+
+.hero-about, .hero-benefits {
+@media screen and (max-width:767px){
+    display: none;
+}
+}
+
+.hero-about {
+    margin-top: 66px;
+    margin-left: 154px;
+}
+
+.hero-about__text, .hero-about__add-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+    max-width: 114px;
+    margin-bottom: 7px;
+    transition: transform 250ms linear;
+    @media screen and (min-width:1200px){
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+}
+
+.hero-about__text.is-hidden {
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+}
+
+.hero-about__add-text.is-active {
+    max-width: 200px;
+    font-weight: 700;
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+    @media screen and (min-width:1200px){ 
+        max-width: 300px;
+    }
+}
+
+    
+
+.hero-about__btn {
+    display: inline-block;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (min-width:1200px) {
+        height: 26px;
+        width: 26px;
+    }
+
+}
+
+.hero-benefits {
+    @media screen and (min-width:768px) {
+    
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 24px;
+}
+}
+
+.hero-benefits__item {
+    position: relative;
+    z-index: 1;
+    &:first-child {
+    margin-bottom: 14px;
+}
+}
+
+.hero-benefits__text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    line-height: 10px;
+    color: var( --main-text-color);
+    text-align:right;
+    
+    @media screen and (min-width:1200px){
+            font-size: 14px;
+            line-height: 1.3;
+        }
+    & span {
+        font-family: 'Titan One', sans-serif;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        color: var(--accent-color);
+        display: block;
+        margin-bottom: 2px;
+        @media screen and (min-width:1200px){
+            font-size: 46px;
+            line-height: 1.15;
+        }
+        
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 37px;
+        z-index: -1;
+        background-color: var(--main-bg-color);
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        @media screen and (min-width:1200px){
+            width: 30px;
+            height: 30px;
+            left: 62px;
+            top:-4px;
+
+        }
+
+    }
+}
+
+
+
+
+
