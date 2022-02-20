@@ -21,8 +21,7 @@
   height: 50px;
   margin-top: 6px;
 
-  @media screen and (min-width: 1200px){
-    margin-right: 110px;
+  @media screen and (min-width: 1280px){
     margin-top: 0px;
     margin-left: -69px;
   }
@@ -34,7 +33,9 @@
 }
 
 .navigation {
-  @media screen and (max-width: 1199px) {
+  margin-right: 110px;
+  margin-left: 110px;
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
@@ -49,7 +50,7 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1280px){
     display: none;
   }
 }
@@ -91,8 +92,8 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px){
-    margin-left: auto;
+  @media screen and (min-width: 1280px){
+    margin-left: 0px;
   }
 }
 
@@ -127,7 +128,7 @@
 
 .navigation__list{
   display: flex;
-  margin-right: 110px;
+  // margin-right: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
