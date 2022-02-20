@@ -18,6 +18,10 @@
   right: 0px;
   z-index: 99;
   background-color: #e17992;
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
 }
 
 .header__modal__btn__conteiner {
@@ -28,16 +32,7 @@
   margin-left: auto;
 }
 
-.header__modal__btn-close {
-  background-color: transparent;
-  border-color: transparent;
-  position: absolute;
-  top: 23px;
-  right: 28px;
-  cursor: pointer;
-}
-
-.header__btn-order__modal {
+.header__btn-order__menu {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: bold;
@@ -61,7 +56,7 @@
   }
 }
 
-.header__modal__btn__oeder__icon {
+.header__modal__btn__order__icon {
   margin-top: 3px;
   margin-left: 25px;
 }
