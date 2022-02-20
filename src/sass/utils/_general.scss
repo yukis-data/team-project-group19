@@ -1,3 +1,8 @@
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
 h1,
 h2,
 h3,
@@ -17,6 +22,7 @@ ul {
   list-style: none;
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -33,14 +39,18 @@ a {
   }
 
   @media screen and (min-width: 480px) {
-    width: 420px;
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 700px;
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1050px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
