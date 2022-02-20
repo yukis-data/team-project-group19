@@ -1,0 +1,92 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.contacts-section {
+  background-color: var(--second-bg-color);
+}
+
+.contacts-list__item {
+  position: absolute;
+  width: 220px;
+  height: 427px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: var(--main-bg-color);
+}
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.comp-item:not(:last-child) {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0 25px;
+}
+
+.contacts-cathegory_cafe {
+  width: 80px;
+  height: 16px;
+  background-color: rgba(240, 209, 165, 1);
+}
+.contacts-cathegory_food {
+  width: 130px;
+  height: 16px;
+  background-color: rgba(194, 226, 151, 1);
+}
+.contacts-cathegory_text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.compontnts-list_item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--third-text-color);
+}
+.compontnts-list_item-text_header {
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--second-text-color);
+}
+
+.contacts-buttons-box {
+  margin-top: 54px;
+}
+
+.btn {
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.contacts__btn-location {
+  background-color: var(--accent-bg-second-button);
+}
+.contacts__btn-franchise {
+  background-color: var(--accent-bg-first-button);
+}
