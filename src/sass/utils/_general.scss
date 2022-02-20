@@ -1,12 +1,8 @@
+
 .list {
-    text-decoration: none;
-    list-style: none;
-}
-
-a {
   text-decoration: none;
+  list-style: none;
 }
-
 h1,
 h2,
 h3,
@@ -23,24 +19,39 @@ p {
 
 ul {
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    @media screen and (min-width: 320px) {
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    @media screen and (min-width: 768px) {
-        max-width: 660px; 
-    }
+a {
+  text-decoration: none;
+}
 
-    @media screen and (min-width: 1220px) {
-        max-width: 1054px;
-    }
+.conteiner {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    min-width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
