@@ -1,52 +1,9 @@
-.location-button {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 180px;
-  height: 44px;
-  border: 0;
-  background: var(--accent-color);
-  border-radius: 22px;
-
-  font-family: DM Sans;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-
-  color: var(--main-text-color);
-
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: #d41342;
-    box-shadow: 0px 4px 4px rgba(116, 23, 23, 0.253);
-  }
-}
-
-.location-button__icon {
-  position: absolute;
-  top: 19px;
-  right: 25px;
-
-  .location-button:focus &,
-  .location-button:hover & {
-    transform: translateX(10px);
-  }
-}
-
 .location-button-close {
   position: absolute;
   display: block;
   top: 5px;
   right: 5px;
-  width: 30px;
-  height: 30px;
+
   padding: 6px;
   border-radius: 50%;
 
@@ -55,24 +12,36 @@
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     top: 10px;
     right: 10px;
   }
 
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 20px;
+  }
+
   @media screen and (min-width: 1280px) {
-    top: 30px;
-    right: 50px;
+    top: 25px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   &:hover,
   &:focus {
     background-color: #d41442;
-    box-shadow: 0px 4px 4px rgba(116, 23, 23, 0.253);
   }
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .location-button-close__icon {
