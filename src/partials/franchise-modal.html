@@ -1,76 +1,181 @@
 <!-- Contacts section -->
 
 <section>
-  <div class="container">
-    <button type="button" class="franchise-button" data-modal-open>
-      Franchise
-      <svg width="8" height="10" class="franchise-button__icon">
-        <use href="./images/icon-franchise.svg#button-vector"></use>
+  <h2 class="is-hidden">Contacts</h2>
+  <ul>
+    <li>
+      <button type="button" class="location-button" data-location-modal-open>
+        Our Locations
+        <svg width="8" height="10" class="location-button__icon">
+          <use href="./images/icon-franchise.svg#button-vector-white"></use>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="franchise-button" data-franchise-modal-open>
+        Franchise
+        <svg width="8" height="10" class="franchise-button__icon">
+          <use href="./images/icon-franchise.svg#button-vector"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+  <!-- Backdrop-Modal Location -->
+  <div class="backdrop-location location-backdrop--hidden" data-location-modal>
+    <div class="data-location-modal">
+      <button class="location-button-close" data-location-modal-close>
+        <svg width="18" height="18" class="location-button-close__icon">
+          <use href="./images/icon-franchise.svg#button-vector-close"></use>
+        </svg>
+      </button>
+      <div class="modal-location__container">
+        <ul class="location-map__set">
+          <li class="location-map__item">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380510.68410820665!2d-88.01283809728726!3d41.833902498691224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2spl!4v1645375208193!5m2!1sru!2spl"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="location-map__link"
+              ></iframe>
+            </div>
+          </li>
+          <li class="location-map__item">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1688009.2729411959!2d-118.00775095769374!3d34.27677778590681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLos%20Angeles!5e0!3m2!1sru!2spl!4v1645375376841!5m2!1sru!2spl"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="location-map__link"
+              ></iframe>
+            </div>
+          </li>
+          <li class="location-map__item">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2895551835!2d-74.26055576513465!3d40.69766840492852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2spl!4v1645375427128!5m2!1sru!2spl"
+                width="100"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="location-map__link"
+              ></iframe>
+            </div>
+          </li>
+        </ul>
+        <ul class="location-set">
+          <li class="location-set__item">
+            <p class="location-set__city">Chicago</p>
+            <ul class="location-contacts">
+              <li class="location-contacts__item">
+                <a href="tel:+610383766284 " class="location-contacts__link">+61(0) 383 766 284 </a>
+              </li>
+              <li class="location-contacts__item">
+                <a href="mailto:noreply@envato.com" class="location-contacts__link"
+                  >noreply@envato.com</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="location-set__item">
+            <p class="location-set__city">Los Angeles</p>
+            <ul class="location-contacts">
+              <li class="location-contacts__item">
+                <a href="tel:+610383766284 " class="location-contacts__link">+61(0) 383 766 284 </a>
+              </li>
+              <li class="location-contacts__item">
+                <a href="mailto:noreply@envato.com" class="location-contacts__link"
+                  >noreply@envato.com</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="location-set__item">
+            <p class="location-set__city">New York</p>
+            <ul class="location-contacts">
+              <li class="location-contacts__item">
+                <a href="tel:+610383766284 " class="location-contacts__link">+61(0) 383 766 284 </a>
+              </li>
+              <li class="location-contacts__item">
+                <a href="mailto:noreply@envato.com" class="location-contacts__link"
+                  >noreply@envato.com</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Backdrop-Modal -->
+  <div class="backdrop franchise-backdrop--hidden" data-franchise-modal>
+    <div class="modal-franchise">
+      <button class="button-close" data-franchise-modal-close>
+        <svg width="18" height="18" class="button-close__icon">
+          <use href="./images/icon-franchise.svg#button-vector-close"></use>
+        </svg>
+      </button>
+      <p class="modal-window__title">Do you want to buy a franchise?</p>
+      <svg width="195" height="28" class="modal-window__decoration">
+        <use href="./images/icon-franchise.svg#decoration-icon"></use>
       </svg>
-    </button>
-    <!-- Backdrop-Modal -->
-    <div class="backdrop backdrop--hidden" data-modal>
-      <div class="modal-window">
-        <button class="button-close" data-modal-close>
-          <svg width="18" height="18" class="button-close__icon">
-            <use href="./images/icon-franchise.svg#button-vector-close"></use>
+      <form class="modal-form" autocomplete="off">
+        <div class="input-container">
+          <div class="form-fild">
+            <label for="name" class="modal-form__label"> name</label>
+            <div class="form-input">
+              <input type="text" name="name" id="name" class="modal-form__input input" />
+              <svg width="18" height="18" class="modal-form__icon">
+                <use href="./images/icon-franchise.svg#input-name-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-fild">
+            <label for="tel" class="modal-form__label">number</label>
+            <div class="form-input">
+              <input type="tel" name="tel" id="tel" class="modal-form__input input" />
+              <svg width="18" height="18" class="modal-form__icon">
+                <use href="./images/icon-franchise.svg#input-phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-fild">
+            <label for="mail" class="modal-form__label">e-mail </label>
+            <div class="form-input">
+              <input type="email" name="mail" id="mail" class="modal-form__input input" />
+              <svg width="18" height="18" class="modal-form__icon">
+                <use href="./images/icon-franchise.svg#input-mail-icon"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="agreement">
+          <label class="agreement__label">
+            <input type="checkbox" name="agreement" class="agreement__input input" />
+            <span class="agreement__icon"></span>
+            <svg width="18" height="18" class="agreement__icon--active">
+              <use href="./images/icon-franchise.svg#franchise-icon-check"></use>
+            </svg>
+            I agree to the newsletter and accept
+
+            <a href="" class="agreement__contract">the terms of the contract</a>
+          </label>
+        </div>
+        <button type="submit" class="modal-button">
+          <span>Agree</span>
+
+          <svg width="15" height="12" class="modal-button__icon">
+            <use href="./images/icon-franchise.svg#button-vector-white"></use>
           </svg>
         </button>
-        <p class="modal-window__title">Do you want to buy a franchise?</p>
-        <svg width="195" height="28" class="modal-window__decoration">
-          <use href="./images/icon-franchise.svg#decoration-icon"></use>
-        </svg>
-        <form class="modal-form" autocomplete="off">
-          <div class="input-container">
-            <div class="form-fild">
-              <label for="name" class="modal-form__label"> name</label>
-              <div class="form-input">
-                <input type="text" name="name" id="name" class="modal-form__input input" />
-                <svg width="18" height="18" class="modal-form__icon">
-                  <use href="./images/icon-franchise.svg#input-name-icon"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-fild">
-              <label for="tel" class="modal-form__label">number</label>
-              <div class="form-input">
-                <input type="tel" name="tel" id="tel" class="modal-form__input input" />
-                <svg width="18" height="18" class="modal-form__icon">
-                  <use href="./images/icon-franchise.svg#input-phone-icon"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-fild">
-              <label for="mail" class="modal-form__label">e-mail </label>
-              <div class="form-input">
-                <input type="email" name="mail" id="mail" class="modal-form__input input" />
-                <svg width="18" height="18" class="modal-form__icon">
-                  <use href="./images/icon-franchise.svg#input-mail-icon"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="agreement">
-            <label class="agreement__label">
-              <input type="checkbox" name="agreement" class="agreement__input input" />
-              <span class="agreement__icon"></span>
-              <svg width="18" height="18" class="agreement__icon--active">
-                <use href="./images/icon-franchise.svg#franchise-icon-check"></use>
-              </svg>
-              I agree to the newsletter and accept
-
-              <a href="" class="agreement__contract">the terms of the contract</a>
-            </label>
-          </div>
-          <button type="submit" class="modal-button">
-            <span>Agree</span>
-
-            <svg width="15" height="12" class="modal-button__icon">
-              <use href="./images/icon-franchise.svg#button-vector-white"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+      </form>
     </div>
   </div>
 </section>
