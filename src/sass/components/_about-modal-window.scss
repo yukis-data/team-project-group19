@@ -31,7 +31,7 @@
     background-position: 50% 97%;
     border-radius: 5px;
 @media screen and (min-width: 768px) {
-    width: 662px;
+    width: 518px;
     padding: 60px 60px 90px 40px;
     top: 50%;
 }
@@ -68,7 +68,7 @@ color: var(--second-text-color);
 position: absolute;
 }
 
-.modal-button {
+.modal-button-about {
     top: 8px;
     right: 8px;
     width: 30px;
@@ -82,18 +82,19 @@ position: absolute;
     background-position: center;
     z-index: 1; 
     transition: transfor 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus {
-    transform: scale(0.9);
+ &:focus {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 8px 18px rgba(34, 60, 80, 0.2) inset;
 }
 } 
 
 .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-    visibility: hidden;
+  transform: translate(-50%, -50%) scale(1.1);
+  visibility: hidden;
 } 
