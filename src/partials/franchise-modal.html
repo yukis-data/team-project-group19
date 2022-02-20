@@ -1,0 +1,76 @@
+<!-- Contacts section -->
+
+<section>
+  <div class="container">
+    <button type="button" class="franchise-button" data-modal-open>
+      Franchise
+      <svg width="8" height="10" class="franchise-button__icon">
+        <use href="./images/icon-franchise.svg#button-vector"></use>
+      </svg>
+    </button>
+    <!-- Backdrop-Modal -->
+    <div class="backdrop backdrop--hidden" data-modal>
+      <div class="modal-window">
+        <button class="button-close" data-modal-close>
+          <svg width="18" height="18" class="button-close__icon">
+            <use href="./images/icon-franchise.svg#button-vector-close"></use>
+          </svg>
+        </button>
+        <p class="modal-window__title">Do you want to buy a franchise?</p>
+        <svg width="195" height="28" class="modal-window__decoration">
+          <use href="./images/icon-franchise.svg#decoration-icon"></use>
+        </svg>
+        <form class="modal-form" autocomplete="off">
+          <div class="input-container">
+            <div class="form-fild">
+              <label for="name" class="modal-form__label"> name</label>
+              <div class="form-input">
+                <input type="text" name="name" id="name" class="modal-form__input input" />
+                <svg width="18" height="18" class="modal-form__icon">
+                  <use href="./images/icon-franchise.svg#input-name-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-fild">
+              <label for="tel" class="modal-form__label">number</label>
+              <div class="form-input">
+                <input type="tel" name="tel" id="tel" class="modal-form__input input" />
+                <svg width="18" height="18" class="modal-form__icon">
+                  <use href="./images/icon-franchise.svg#input-phone-icon"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-fild">
+              <label for="mail" class="modal-form__label">e-mail </label>
+              <div class="form-input">
+                <input type="email" name="mail" id="mail" class="modal-form__input input" />
+                <svg width="18" height="18" class="modal-form__icon">
+                  <use href="./images/icon-franchise.svg#input-mail-icon"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="agreement">
+            <label class="agreement__label">
+              <input type="checkbox" name="agreement" class="agreement__input input" />
+              <span class="agreement__icon"></span>
+              <svg width="18" height="18" class="agreement__icon--active">
+                <use href="./images/icon-franchise.svg#franchise-icon-check"></use>
+              </svg>
+              I agree to the newsletter and accept
+
+              <a href="" class="agreement__contract">the terms of the contract</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-button">
+            <span>Agree</span>
+
+            <svg width="15" height="12" class="modal-button__icon">
+              <use href="./images/icon-franchise.svg#button-vector-white"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
