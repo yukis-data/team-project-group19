@@ -4,13 +4,16 @@
  */
 // Стили для файла с примером HTML-фрагмента
 
-@import 'utils/header-modal';
 @import 'layout/header';
+@import 'components/products';
+@import 'components/about';
 
+@import 'utils/header-modal';
 @import 'utils/variables';
 @import 'utils/general';
 @import '../sass/components/products';
 @import '../sass/components/advantages';
 @import '../sass/components/_footer';
 @import 'utils/is-hidden';
+
 

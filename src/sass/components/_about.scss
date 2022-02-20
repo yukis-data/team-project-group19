@@ -1,0 +1,183 @@
+
+.section-about {
+    padding: 125px 0 40px 0;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--second-bg-color);
+    background-image:url(/images/about/about-pic-milk-mob-x1-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 82%;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/about-pic-milk-mob-x2-min.png);
+    };
+@media screen and (min-width: 768px) {
+max-width: 768px; 
+}
+
+@media screen and (min-width: 1280px){
+max-width: 1280px; 
+background-image:url(/images/about/about-pic-milk-desk-x1-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 100%;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/about-pic-milk-desk-x2-min.png);
+    };
+}
+}
+
+.about-container {
+@media screen and (min-width: 768px) {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+}
+}
+
+.section-about__label {
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    }
+    @media screen and (min-width: 1220px) {
+    font-size: 30px;
+    line-height: 1.13;
+    }
+}
+
+// title
+
+.section-about__title  { 
+    margin-top: 15px;
+font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+    font-size: 48px;
+    }
+    @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    }
+
+}
+
+// paragraph styles
+
+.section-about__text{ 
+    width: 220px;
+    margin: 0 auto 0 auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--third-text-color);
+@media screen and (min-width: 768px) {
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+@media screen and (min-width: 1220px) {
+    width: 463px;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+
+}
+}
+
+.section-about__text--black {
+    color: var(--second-text-color);
+    margin: 0 auto 46px auto;
+}
+
+.about-text {
+    margin: 0.5em auto 0 auto;
+}
+
+// section image styles
+
+.section-about__image {
+height: 280px;
+width: 279px;
+margin: 26px auto 46px auto;
+    background-image:url(/images/about/about-pic-mob-x1-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/about-pic-mob-x2-min.png);
+    }
+
+@media screen and (min-width: 768px) {
+height: 340px;
+width: 339px;
+margin-right: 17px;
+    background-image: url(/images/about/about-pic-tab-x1-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/about-pic-tab-x2-min.png); 
+}
+}
+@media screen and (min-width: 1280px) { 
+height: 516px;
+width: 516px;
+margin-right: 74px;
+margin-left: 0;
+        background-image: url(/images/about/about-pic-desk-x1-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) 
+    {background-image: url(/images/about/about-pic-desk-x2-min.png); 
+}
+}
+}
+
+// button styles
+
+.section-about__button{
+    display: block;
+    padding: 0 30px;
+    margin: 46px auto 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    color: var(--accent-color);
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background-color: #FFFFFF;
+    background-image: url(/images/about/about-btn-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 54%;
+    &:hover {
+    background-color: var(--accent-bg-first-button);
+    }
+}
+
