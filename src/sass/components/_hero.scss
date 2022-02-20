@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.hero__title {
+.hero-title {
     font-family: 'Titan One', sans-serif;
     font-weight: 400;
     font-size: 26px;
@@ -37,7 +37,7 @@
         margin-bottom: 25px;
         font-size: 38px;
     }
-    & span {
+    & .hero-title__accent {
         font-size: 48px;
         line-height: 0.95;
         color: var(--accent-color);
@@ -83,11 +83,10 @@
     }
 }
 
+.hero-about, .hero-benefits {
 @media screen and (max-width:767px){
-    .hero-about, .hero-benefits {
     display: none;
 }
-    
 }
 
 .hero-about {
