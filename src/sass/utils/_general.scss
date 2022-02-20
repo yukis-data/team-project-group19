@@ -40,14 +40,18 @@ a {
   }
 
   @media screen and (min-width: 480px) {
-    width: 420px;
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 700px;
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
-  @media screen and (min-width: 1220px) {
-    width: 1054px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
