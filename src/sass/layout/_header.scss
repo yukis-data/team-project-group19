@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--header-bg-color);
+}
+
+.header__flex__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  fill: var(--accent-color);
+  margin-top: 6px;
+}
+
+.navigation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.header__btn__menu {
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.header__btn-order {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
