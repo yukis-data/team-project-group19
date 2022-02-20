@@ -8,6 +8,7 @@
 @import 'utils/variables';
 @import 'utils/general';
 @import '../sass/components/products';
+<<<<<<< Updated upstream
 @import './components/contacts.scss';
 =======
 @import './utils/variables';
@@ -15,4 +16,11 @@
 
 @import './components/products';
 @import './components/contacts';
+>>>>>>> Stashed changes
+=======
+@import '../sass/components/advantages';
+@import '../sass/components/contacts';
+@import '../sass/components/_footer';
+@import 'utils/is-hidden';
+@import '../sass/components/franchise-modal';
 >>>>>>> Stashed changes
