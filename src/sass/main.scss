@@ -9,6 +9,7 @@
 @import 'components/about';
 
 @import 'utils/header-modal';
+<<<<<<< Updated upstream
 @import 'utils/variables';
 @import 'utils/general';
 @import '../sass/components/products';
@@ -17,3 +18,14 @@
 @import 'utils/is-hidden';
 
 
+=======
+@import 'components/hero';
+@import 'components/advantages';
+@import 'components/contacts';
+@import 'components/_footer';
+@import 'utils/is-hidden';
+
+@import 'components/franchise-modal';
+@import 'components/about-modal-window';
+@import 'components/location-modal';
+>>>>>>> Stashed changes
