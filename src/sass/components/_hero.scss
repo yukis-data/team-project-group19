@@ -1,13 +1,22 @@
 .hero {
   background-color: var(--header-bg-color);
-  padding: 37px 34px;
+
   display: flex;
   justify-content: space-between;
+  min-width: 1280px;
   min-height: 665px;
   position: relative;
+  left: 0px;
+  top: 0px;
 
   @media screen and (max-width: 768px) {
-    min-height: 400px;
+    min-height: 399px;
+    min-width: 768px;
+  }
+
+  @media screen and (max-width: 320px) {
+    min-height: 502px;
+    min-width: 320px;
   }
 
   .hero_title {
@@ -20,13 +29,26 @@
     color: white;
     letter-spacing: 0.04em;
     margin-bottom: 25px;
-
+    margin-left: 115px;
+    margin-top: 151px;
     @media screen and (max-width: 768px) {
       font-size: 22px;
       max-width: 162px;
       line-height: 25.19px;
       margin-bottom: 20px;
+      margin-top: 102px;
+      margin-left: 34px;
     }
+
+    @media screen and (max-width: 320px) {
+      font-size: 26px;
+      max-width: 218px;
+      line-height: 25.19px;
+      margin-bottom: 20px;
+      margin-top: 102px;
+      margin-left: 34px;
+    }
+
 
     span:last-child {
       font-size: 58px;
@@ -43,9 +65,11 @@
     display: flex;
     .btn__primary {
       margin-right: 15px;
+      margin-left: 115px;
 
       @media screen and (max-width: 768px) {
         margin-right: 10px;
+        margin-left: 34px;
       }
     }
     margin-bottom: 56px;
@@ -64,12 +88,20 @@
       background-image: url('../images/slider-pic5 1.png');
       background-repeat: no-repeat;
       margin-right: 30px;
+      margin-left: 77px;
+      margin-bottom: 45px;
       background-size: cover;
 
       @media screen and (max-width: 768px) {
         width: 124px;
         height: 126px;
         margin-right: 0px;
+        margin-top: 28px;
+        margin-left: 34px;
+        margin-bottom: 28px;
+      }
+         @media screen and (max-width: 320px) {
+        display: none;
       }
     }
     .hero_milk_desk {
@@ -79,13 +111,25 @@
       max-width: 200px;
       z-index: 4;
 
+      margin-top: 112px;
+
       @media screen and (max-width: 768px) {
         font-size: 8px;
         max-width: 114px;
       }
+         @media screen and (max-width: 320px) {
+        display: none;
+      }
 
       p {
         margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 7px;
+        }
+           @media screen and (max-width: 320px) {
+        display: none;
+      }
       }
     }
   }
@@ -98,18 +142,29 @@
   }
 
   .hero_counter {
+    margin-top: 160px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 96px;
+    }
+
     .hero_counter_number {
       font-family: Titan One;
       font-size: 46px;
+      margin-right: 115px;
       color: var(--accent-color);
       position: relative;
       z-index: 4;
 
       @media screen and (max-width: 768px) {
         font-size: 28px;
+        margin-right: 44px;
+      }
+       @media screen and (max-width: 320px) {
+        display: none;
       }
 
       &::after {
@@ -130,16 +185,24 @@
           top: -2px;
           right: -8px;
         }
+         @media screen and (max-width: 320px) {
+        display: none;
+      }
       }
     }
     .hero_counter_text {
       color: white;
       font-size: 14px;
+      margin-right: 115px;
       font-family: DM Sans;
       z-index: 3;
 
       @media screen and (max-width: 768px) {
         font-size: 8px;
+        margin-right: 44px;
+      }
+       @media screen and (max-width: 320px) {
+        display: none;
       }
     }
   }
@@ -164,6 +227,14 @@
         width: 143px;
         height: 336px;
       }
+      @media screen and (max-width: 320px) {
+        margin-right: 32px;
+        margin-top: 92px;
+        width: 171px;
+        height: 410px;
+         z-index: 0;
+      }
+
     }
     .hero_icecream_circle {
       border-radius: 50%;
@@ -180,7 +251,12 @@
       @media screen and (max-width: 768px) {
         width: 324px;
         height: 324px;
+        left: 0;
         bottom: 46px;
+        transform: translateX(-12%);
+      }
+      @media screen and (max-width: 320px) {
+        display: none;
       }
     }
   }
@@ -208,6 +284,9 @@
         width: 168px;
         height: 133px;
       }
+        @media screen and (max-width: 320px) {
+        display: none;
+      }
     }
   }
 }
@@ -215,7 +294,7 @@
 .btn {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 399;
   font-size: 14px;
   line-height: 40px;
   text-align: center;
@@ -251,10 +330,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: 56px;
 
     @media screen and (max-width: 768px) {
       width: 18px;
       height: 18px;
+      margin-bottom: 34px;
     }
   }
 }
