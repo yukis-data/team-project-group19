@@ -22,9 +22,9 @@
 <path fill="#d41443" style="fill: var(--color1, #d41443)" d="M178.145 15.871c0 6.312-5.553 11.429-12.402 11.429s-12.402-5.117-12.402-11.429c0-6.312 5.553-11.429 12.402-11.429s12.402 5.117 12.402 11.429z"></path>
 <path fill="#d41443" style="fill: var(--color1, #d41443)" d="M68.777 15.871c0 6.312-5.553 11.429-12.402 11.429s-12.402-5.117-12.402-11.429c0-6.312 5.553-11.429 12.402-11.429s12.402 5.117 12.402 11.429z"></path>
 </symbol>
-<symbol id="franchise-icon-check" viewBox="0 0 28 32">
-<path fill="#d41443" style="fill: var(--color1, #d41443)" d="M3.759 0h19.924c2.080 0 3.767 1.686 3.767 3.767v24.484c0 2.080-1.686 3.767-3.767 3.767h-19.924c-2.080 0-3.767-1.686-3.767-3.767v-24.484c0-2.080 1.686-3.767 3.767-3.767z"></path>
-<path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3765" d="M11.14 21.719l-4.475-5.311-0.143 0.169-1.627 1.917 0.102 0.122 6.144 7.289 0.143-0.169 12.982-15.402-0.104-0.122-1.512-1.795-0.145-0.169-0.143 0.169-11.221 13.302z"></path>
+<symbol id="franchise-icon-check" viewBox="0 0 32 32">
+<path fill="#d41443" style="fill: var(--color1, #d41443)" d="M3.556 0h24.889c1.964 0 3.556 1.592 3.556 3.556v24.889c0 1.964-1.592 3.556-3.556 3.556h-24.889c-1.964 0-3.556-1.592-3.556-3.556v-24.889c0-1.964 1.592-3.556 3.556-3.556z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3556" d="M12.992 21.746l-5.214-5.308-0.128 0.13-1.778 1.794-0.121 0.124 0.123 0.124 7.118 7.244 0.126-0.13 15.132-15.396-0.124-0.124-1.764-1.796-0.124-0.13-0.128 0.13-13.12 13.337z"></path>
 </symbol>
 <symbol id="button-vector-white" viewBox="0 0 19 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M2.83 3.032l12.973 11.88-12.973 11.877"></path>
