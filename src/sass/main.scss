@@ -12,11 +12,17 @@
 @import 'components/products';
 @import 'components/about';
 
+@import 'utils/header-modal';
 @import 'components/hero';
 @import 'components/advantages';
 @import 'components/contacts-section';
-// @import 'components/contacts-need-fix';
+ @import 'components/contacts-need-fix';
+
+
 @import 'components/footer';
+@import 'utils/is-hidden';
+
+
 
 @import 'components/franchise-modal';
 @import 'components/about-modal-window';
