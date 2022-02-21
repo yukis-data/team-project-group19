@@ -2,9 +2,23 @@
   background-color: var(--second-bg-color);
   margin-top: -80px;
   padding-bottom: 110px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 160px;
+    min-width: 1280px;
+    background-image: url(../images/contacts-bg1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20% 15%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg2x.png);
+    }
   }
 
   @media screen and (min-width: 1280px) {
