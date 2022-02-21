@@ -3,6 +3,7 @@
  * Все паршалы подключаются сюда.
  */
 // Стили для файла с примером HTML-фрагмента
+@import 'utils/variables';
 @import 'utils/general';
 @import 'utils/is-hidden';
 @import 'utils/header-modal';
@@ -14,6 +15,7 @@
 @import 'components/hero';
 @import 'components/advantages';
 @import 'components/contacts';
+// @import 'components/contacts-need-fix';
 @import 'components/footer';
 
 @import 'components/franchise-modal';
