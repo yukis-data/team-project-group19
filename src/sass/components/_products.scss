@@ -22,7 +22,7 @@
     font-size: 48px;
     line-height: 1.14;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
   }
@@ -43,7 +43,7 @@
     font-size: 26px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -59,7 +59,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 150px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 260px;
   }
 }
@@ -71,7 +71,7 @@
     display: flex;
     margin: -10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     margin: -12px;
   }
@@ -82,7 +82,7 @@
     width: calc((100% - 40px) / 3);
     margin: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: calc((100% - 40px) / 3);
     margin: 12px;
   }
@@ -99,7 +99,7 @@
   border-radius: 24px;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 330px;
   }
 }
@@ -138,7 +138,7 @@
         background-image: url(../images/products1tablet@2x.png);
       }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: -210px;
 
       width: 335px;
@@ -181,7 +181,7 @@
         background-size: cover;
       }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: -210px;
       width: 337px;
       height: 335px;
@@ -225,7 +225,7 @@
         background-size: cover;
       }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: -210px;
       width: 335px;
       height: 335px;
@@ -254,7 +254,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.33;
   }
@@ -263,7 +263,7 @@
 .products-list__text-container {
   margin: 0 auto 30px;
 
-  max-width: 205px;
+  max-width: 200px;
 
   &::before {
     content: '';
@@ -280,7 +280,7 @@
   @media screen and (min-width: 768px) {
     padding: 0 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin: 0 auto 60px;
     padding: 0;
     max-width: 241px;
@@ -299,7 +299,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.75;
   }
