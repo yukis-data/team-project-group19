@@ -127,6 +127,9 @@
     @media screen and (min-width:1200px){ 
         max-width: 300px;
     }
+    & + .hero-about__btn {
+        transform: rotate(180deg);
+    }
 }
 
     
@@ -142,6 +145,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: transform 250ms linear;
     @media screen and (min-width:1200px) {
         height: 26px;
         width: 26px;
