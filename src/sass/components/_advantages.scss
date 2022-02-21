@@ -14,6 +14,7 @@
   }
 }
 
+
 .advantages-container {
   padding-left: 20px;
   padding-right: 70px;
@@ -52,6 +53,9 @@
 
 .milk-icon::before {
   content: '';
+  display: inline-block;
+  width: 33px;
+  height: 50px;
   background-image: url(../images/advantages-img/milk.png);
   display: block;
   width: 33px;
@@ -69,6 +73,9 @@
 
 .fruits-icon::before {
   content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
   background-image: url(../images/advantages-img/fruits.png);
   display: block;
   width: 50px;
@@ -88,6 +95,9 @@
 
 .caramel-icon::before {
   content: '';
+  display: inline-block;
+  width: 44px;
+  height: 50px;
   background-image: url(../images/advantages-img/caramel.png);
   display: block;
   width: 44px;
