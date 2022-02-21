@@ -3,15 +3,24 @@
  * Все паршалы подключаются сюда.
  */
 // Стили для файла с примером HTML-фрагмента
-
-@import 'utils/header-modal';
-@import 'layout/header';
-
 @import 'utils/variables';
 @import 'utils/general';
-@import '../sass/components/products';
-@import '../sass/components/hero';
-@import '../sass/components/advantages';
-@import '../sass/components/_footer';
+@import 'utils/is-hidden';
+@import 'utils/header-modal';
+
+@import 'layout/header';
+@import 'components/products';
+@import 'components/about';
+
+@import 'utils/header-modal';
+@import 'components/hero';
+@import 'components/advantages';
+@import 'components/contacts';
+@import 'components/_footer';
 @import 'utils/is-hidden';
 
+
+
+@import 'components/franchise-modal';
+@import 'components/about-modal-window';
+@import 'components/location-modal';

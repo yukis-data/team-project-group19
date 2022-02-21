@@ -160,7 +160,11 @@
         display: block;
         position: absolute;
         top: 9px;
-        right: 24px;
+        right: 34px;
+}
+
+@media screen and (min-width:1280px){
+    right: 115px;
 }
 }
 
