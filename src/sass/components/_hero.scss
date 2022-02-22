@@ -142,7 +142,7 @@
   color: var(--main-text-color);
   max-width: 114px;
   margin-bottom: 7px;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
   @media screen and (min-width: 1200px) {
     max-width: 200px;
     font-size: 14px;
@@ -151,18 +151,28 @@
   }
 }
 
+.hero-about__add-text {
+  opacity: 0;
+}
+
+.hero-about__text {
+  opacity: 1;
+}
+
 .hero-about__text.is-hidden {
   transform: scale(1.1);
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
+  opacity: 0;
 }
 
 .hero-about__add-text.is-active {
   max-width: 200px;
   font-weight: 700;
   transform: scale(1.1);
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
+  opacity: 1;
   @media screen and (min-width: 1200px) {
-    max-width: 300px;
+    max-width: 270px;
   }
   & + .hero-about__btn {
     transform: rotate(180deg);
