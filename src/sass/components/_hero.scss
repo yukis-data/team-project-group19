@@ -9,6 +9,7 @@
 .hero {
   background-color: var(--header-bg-color);
   padding-top: 137px;
+  position: relative;
   padding-bottom: 160px;
   @media screen and (min-width: 768px) {
     padding-top: 15px;
@@ -18,9 +19,6 @@
     padding-top: 84px;
     padding-bottom: 56px;
   }
-}
-.hero-container {
-  position: relative;
 }
 
 .hero-title {
@@ -62,15 +60,20 @@
 .hero-list {
   display: flex;
 }
-.hero-milk-images {
+
+.hero-milk-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media screen and (min-width: 768px) {
-    min-width: 768px;
     background-image: url('..//images/hero/slider-milk-tablet1.png');
-    background-repeat: no-repeat;
     width: 124px;
     height: 126px;
-    left: 34px;
-    top: 245px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('..//images/hero/slider-milk-desktop1.png');
+    width: 188px;
+    height: 191px;
   }
 }
 
@@ -118,7 +121,10 @@
 
 .hero-about {
   margin-top: 66px;
-  margin-left: 154px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .hero-about__text,
@@ -162,29 +168,19 @@
   width: 171px;
   height: 410px;
   left: 117px;
-  top: 92px;
+  bottom: 0;
   z-index: 0;
 
   @media screen and (min-width: 768px) {
-    min-width: 768px;
     background-image: url('..//images/hero/slider-icecream-tablet1.png');
-    background-repeat: no-repeat;
-    position: absolute;
     width: 236px;
     height: 557px;
-    left: 594px;
-    bottom: 0;
     left: 50%;
   }
   @media screen and (min-width: 1200px) {
-    min-width: 1200px;
     background-image: url('..//images/hero/slider-icecream-desktop1.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 1280px;
-    height: 665px;
-    left: 0px;
-    bottom: 0%;
+    width: 236px;
+    height: 557px;
     left: 50%;
   }
 }
@@ -268,5 +264,25 @@
       left: 62px;
       top: -4px;
     }
+  }
+}
+
+.girl_image {
+  display: none;
+  position: absolute;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    display: block;
+    background-image: url('..//images/hero/slider-lady-tablet1.png');
+    width: 168px;
+    height: 133px;
+    right: 34px;
+    bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('..//images/hero/slider-lady-desktop1.png');
+    width: 293px;
+    height: 232px;
+    right: 109px;
   }
 }
