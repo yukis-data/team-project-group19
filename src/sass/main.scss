@@ -12,11 +12,13 @@
 @import 'components/products';
 @import 'components/about';
 
+@import 'utils/header-modal';
 @import 'components/hero';
 @import 'components/advantages';
-@import 'components/contacts';
-// @import 'components/contacts-need-fix';
+@import 'components/contacts-section';
+
 @import 'components/footer';
+@import 'utils/is-hidden';
 
 @import 'components/gallery';
 
