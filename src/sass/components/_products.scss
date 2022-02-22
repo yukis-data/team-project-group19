@@ -96,6 +96,9 @@
   padding-top: 161px;
   padding-bottom: 40px;
 
+  width: 100%;
+  height: 100%;
+
   border-radius: 24px;
   text-align: center;
 
@@ -133,9 +136,11 @@
       width: 220px;
       height: 226px;
       background-image: url(../images/products1tablet.png);
+      background-size: cover;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/products1tablet@2x.png);
+        background-size: cover;
       }
     }
     @media screen and (min-width: 1280px) {
@@ -144,9 +149,11 @@
       width: 335px;
       height: 335px;
       background-image: url(../images/products1desktop.png);
+      background-size: cover;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/products1desktop@2x.png);
+        background-size: cover;
       }
     }
   }
@@ -155,7 +162,7 @@
   background-color: var(--bg-color-second-cart);
   &::before {
     position: absolute;
-
+    z-index: 1;
     top: -113px;
     left: 50%;
     transform: translateX(-50%);
@@ -199,7 +206,7 @@
   background-color: var(--bg-color-third-cart);
   &::before {
     position: absolute;
-
+    z-index: 1;
     top: -113px;
     left: 50%;
     transform: translateX(-50%);
@@ -314,6 +321,92 @@
   }
 }
 
+.products-wrapper {
+  position: absolute;
+  pointer-events: none;
+
+  overflow: hidden;
+
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+@keyframes modalGo {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+@keyframes modalBack {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.products-modal {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: -100%;
+  border-radius: 24px;
+
+  animation: modalBack 500ms forwards;
+}
+.products-modal--first {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: -100%;
+
+  border-radius: 24px;
+}
+.products-modal--second {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: -100%;
+  border-radius: 24px;
+}
+
+.products-modal--go {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: -100%;
+
+  border-radius: 24px;
+
+  animation: modalGo 500ms forwards;
+}
+.products-modal--back {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: -100%;
+  border-radius: 24px;
+
+  animation: modalBack 500ms forwards;
+}
+
 .products-list__button {
   position: relative;
 
@@ -327,4 +420,118 @@
   cursor: pointer;
 
   background-image: url(../images/arrow-right.png);
+
+  transform: rotate(540deg);
+  transition: transform 500ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  &--first {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+    border: 0 solid;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background-image: url(../images/arrow-right.png);
+
+    transform: rotate(0);
+    transition: transform 500ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--second {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+    border: 0 solid;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background-image: url(../images/arrow-right.png);
+
+    transform: rotate(0);
+    transition: transform 500ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--rotate {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+    border: 0 solid;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background-image: url(../images/arrow-right.png);
+    transform: rotate(180deg);
+    transition: transform 500ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--back {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+    border: 0 solid;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background-image: url(../images/arrow-right.png);
+
+    transform: rotate(360deg);
+    transition: transform 500ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.products-modal__text-container {
+  margin: 0 auto 30px;
+
+  max-width: 200px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto 20px;
+    padding: 0;
+    max-width: 241px;
+  }
+}
+.products-modal__text {
+  margin-top: 150px;
+
+  font-family: 'DM sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 130px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 150px;
+    font-size: 16px;
+  }
+}
+#first-mod {
+  background-color: rgb(252, 156, 180);
+}
+#second-mod {
+  background-color: #e2b06a;
+}
+#third-mod {
+  background-color: #a2d165;
 }
