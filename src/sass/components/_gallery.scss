@@ -4,7 +4,7 @@
 
   background-image: linear-gradient( var(--second-bg-color) 50%, #fff 50%);
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 70px;
     padding-bottom: 60px;
   }
@@ -21,15 +21,15 @@
   grid-template-rows: repeat(36, 1fr);
   grid-gap: 2px;
   width: 100%;
-  height: 122px;
+  height: 430px;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 767px){
     grid-gap: 3px;
     width: 480;
     height: 182px;
   }
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     grid-gap: 5px;
     width: 768px;
     height: 264px;
@@ -46,7 +46,7 @@
   overflow: hidden;
   border-radius: 7px;
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (min-width: 768px) {
     border-radius: 15px;
   }
 
@@ -55,13 +55,13 @@
   }
 }
 
-.gallery__img {
+.gallery-list__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 7px;
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (min-width: 768px) {
     border-radius: 15px;
   }
 
