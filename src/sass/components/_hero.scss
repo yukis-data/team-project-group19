@@ -66,14 +66,21 @@
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    background-image: url('..//images/hero/slider-milk-tablet1.png');
+    background-image: url('../images/hero/slider-milk-tablet1.png');
     width: 124px;
     height: 126px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-milk-tablet1@2x.png');
+    }
   }
+
   @media screen and (min-width: 1200px) {
-    background-image: url('..//images/hero/slider-milk-desktop1.png');
+    background-image: url('../images/hero/slider-milk-desktop1.png');
     width: 188px;
     height: 191px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-milk-desktop1@2x.png');
+    }
   }
 }
 
@@ -161,27 +168,59 @@
     transform: rotate(180deg);
   }
 }
+.icecream-circle {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    width: 324px;
+    height: 324px;
+    border-radius: 50%;
+    background-color: var(--accent-text-color);
+    z-index: 0;
+    left: 50%;
+    transform: translate(-20%, -30px);
+    bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    transform: translate(-20%, -80px);
+  }
+}
+
 .hero-icecream-image {
-  background-image: url('..//images/hero/slider-icecream-mob1.png');
+  background-image: url('../images/hero/slider-icecream-mob1.png');
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   width: 171px;
   height: 410px;
   left: 117px;
   bottom: 0;
-  z-index: 0;
+  z-index: 1;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero/slider-icecream-mob1@2x.png');
+  }
 
   @media screen and (min-width: 768px) {
-    background-image: url('..//images/hero/slider-icecream-tablet1.png');
-    width: 236px;
-    height: 557px;
+    background-image: url('../images/hero/slider-icecream-tablet1.png');
+    width: 143px;
+    height: 336px;
     left: 50%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-icecream-tablet1@2x.png');
+    }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url('..//images/hero/slider-icecream-desktop1.png');
+    background-image: url('../images/hero/slider-icecream-desktop1.png');
     width: 236px;
     height: 557px;
     left: 50%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-icecream-desktop1@2x.png');
+    }
   }
 }
 
@@ -273,16 +312,22 @@
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     display: block;
-    background-image: url('..//images/hero/slider-lady-tablet1.png');
+    background-image: url('../images/hero/slider-lady-tablet1.png');
     width: 168px;
     height: 133px;
     right: 34px;
     bottom: 0;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-lady-tablet1@2x.png');
+    }
   }
-  @media screen and (min-width: 768px) {
-    background-image: url('..//images/hero/slider-lady-desktop1.png');
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/hero/slider-lady-desktop1.png');
     width: 293px;
     height: 232px;
     right: 109px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/slider-lady-desktop1@2x.png');
+    }
   }
 }
