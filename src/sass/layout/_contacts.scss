@@ -5,6 +5,7 @@
   margin-left: auto;
   margin-right: auto;
 
+
   @media screen and (min-width: 1280px) {
     padding-bottom: 160px;
     min-width: 1280px;
@@ -39,8 +40,9 @@
   }
 }
 
-.contacts-list__item 
-{  width: 220px;
+.contacts-list__item {  
+  width: 220px;
+  
   @media screen and (min-width: 320px) {
     width: 220px;
     height: 427px;
@@ -57,12 +59,14 @@
     margin-left: 20px;
     height: 544px;
     padding: 50px 32px 50px 31px;
+    margin-top: -80px;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 1px);
     margin-left: 31px;
     height: 572px;
     padding: 51px 44px 62px 43px;
+    // margin-top: -80px;
   }
 }
 
