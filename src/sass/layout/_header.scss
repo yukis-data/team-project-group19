@@ -1,5 +1,10 @@
 .header {
-  background-color: var(--header-bg-color);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .header__flex__container {

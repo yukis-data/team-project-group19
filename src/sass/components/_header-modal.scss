@@ -1,6 +1,6 @@
-.header {
-  position: relative;
-}
+// .header {
+//   position: relative;
+// }
 
 .backdrop {
   width: 100vw;
@@ -16,7 +16,6 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: 99;
   background-color: #e17992;
 
   @media screen and (min-width: 768px) {
