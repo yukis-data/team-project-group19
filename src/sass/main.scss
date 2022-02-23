@@ -6,23 +6,18 @@
 @import 'utils/variables';
 @import 'utils/general';
 @import 'utils/is-hidden';
-@import 'utils/header-modal';
 
 @import 'layout/header';
-@import 'components/products';
-@import 'components/about';
+@import 'layout/hero';
+@import 'layout/products';
+@import 'layout/about';
+@import 'layout/advantages';
+@import 'layout/gallery';
+@import 'layout/customer-reviews';
+@import 'layout/contacts';
+@import 'layout/footer';
 
-@import 'utils/header-modal';
-@import 'components/hero';
-@import 'components/customer-reviews';
-@import 'components/advantages';
-@import 'components/contacts-section';
-
-@import 'components/footer';
-@import 'utils/is-hidden';
-
-@import 'components/gallery';
-
+@import 'components/header-modal';
 @import 'components/franchise-modal';
 @import 'components/about-modal-window';
 @import 'components/location-modal';
