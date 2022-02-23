@@ -6,19 +6,33 @@
   }
 }
 
+.hero--size {
+  background-color: var(--header-bg-color); 
+  
+  @media screen and (min-width: 320px){
+    height: 502px;
+  }
+
+  @media screen and (min-width: 768px){
+    height: 399px;
+  }
+
+  @media screen and (min-width: 1200px){
+    height: 665px;
+  }
+}
+
 .hero {
-  background-color: var(--header-bg-color);
-  padding-top: 137px;
   position: relative;
-  padding-bottom: 160px;
-  @media screen and (min-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 34px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 84px;
-    padding-bottom: 56px;
-  }
+
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 63px;
+  //   // padding-bottom: 34px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 108px;
+  //   // padding-bottom: 56px;
+  // }
 }
 
 .hero-title {
@@ -31,17 +45,22 @@
   max-width: 218px;
   color: var(--main-text-color);
   text-align: left;
-  margin-bottom: 19px;
-  z-index: 10;
-  position: relative;
+  position: absolute;
+  z-index: 2;
+  @media screen and (min-width: 320px) {
+    top: 193px;
+  }
+
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
+    top: 102px;
     font-size: 22px;
     max-width: 162px;
   }
+
   @media screen and (min-width: 1200px) {
+    top: 171px;
+
     max-width: 277px;
-    margin-bottom: 25px;
     font-size: 38px;
   }
   & .hero-title__accent {
@@ -59,6 +78,19 @@
 
 .hero-list {
   display: flex;
+  position: absolute;
+
+  @media screen and (min-width: 320px) {
+    top: 318px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 202px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  top: 333px;
+  }
 }
 
 .hero-milk-image {
@@ -127,10 +159,15 @@
 }
 
 .hero-about {
-  margin-top: 66px;
+  position: absolute;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-end;
+    top: 245px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+  top: 429px;
   }
 }
 
@@ -189,13 +226,13 @@
     background-color: var(--accent-text-color);
     z-index: 0;
     left: 50%;
-    transform: translate(-20%, -30px);
+    transform: translate(-25%, 110%);
     bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 538px;
     height: 538px;
-    transform: translate(-20%, -80px);
+    transform: translate(-30%, 110%);
   }
 }
 
@@ -204,6 +241,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  top: 92px;
   width: 171px;
   height: 410px;
   left: 117px;
@@ -219,6 +257,7 @@
     width: 143px;
     height: 336px;
     left: 50%;
+    top: 63px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-icecream-tablet1@2x.png');
     }
@@ -228,6 +267,7 @@
     width: 236px;
     height: 557px;
     left: 50%;
+    top: 108px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-icecream-desktop1@2x.png');
     }
@@ -253,15 +293,18 @@
 }
 
 .hero-benefits {
+  margin: 0;
+  z-index: 2;
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 9px;
+    top: 94px;
     right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
-    right: 115px;
+    top: 156px;
+    right: 10px;
   }
 }
 
@@ -320,13 +363,14 @@
   display: none;
   position: absolute;
   background-repeat: no-repeat;
+  background-size: cover;
   @media screen and (min-width: 768px) {
     display: block;
     background-image: url('../images/hero/slider-lady-tablet1.png');
     width: 168px;
     height: 133px;
     right: 34px;
-    bottom: 0;
+    top: 266px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-lady-tablet1@2x.png');
     }
@@ -335,7 +379,8 @@
     background-image: url('../images/hero/slider-lady-desktop1.png');
     width: 293px;
     height: 232px;
-    right: 109px;
+    right: 10px;
+    top: 433px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-lady-desktop1@2x.png');
     }
