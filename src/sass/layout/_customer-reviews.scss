@@ -109,6 +109,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
+  z-index: 0;
   @media screen and (min-width: 768px) {
     font-size: 15px;
     line-height: 2.1;
@@ -117,21 +118,37 @@
     padding-top: 47px;
     padding-bottom: 34px;
   }
-}
 
-.p-field-gradient::before {
-  position: absolute;
-  top: 25px;
-  left: 60px;
-  content: '';
-  background: url(../images/ico.png);
-  padding-left: 0;
-  z-index: -1;
-  @media screen and (min-width: 768px) {
-    top: 25px;
-    left: 40px;
+  &:before {
+    content: '';
+
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: -15px;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/ico.png);
+    padding-left: 0;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+    top: 32px;
+    left: 50px;
+    }
   }
 }
+    // content: '';
+    // display: block;
+    // position: absolute;
+    // z-index: -1;
+    // left: 10px;
+    // top: -15px;
+    // width: 54px;
+    // height: 40px;
+    // background-image: url('../images/mobile/reviews/braсkets.png');
+    // background-size: 54px 40px;
+
+
 
 .user {
   font-family: DM Sans;
