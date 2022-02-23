@@ -124,7 +124,7 @@
   top: 25px;
   left: 60px;
   content: '';
-  // background-image: url(/images/qw.png);
+  background: url(../images/ico.png);
   padding-left: 0;
   z-index: -1;
   @media screen and (min-width: 768px) {
@@ -173,6 +173,7 @@
 .slick-dots li.slick-active button {
   background-color: #c7133e;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: url(../images/Vector.png) no-repeat 0 0 / cover;
 }
 
 .slick-dots li button {
