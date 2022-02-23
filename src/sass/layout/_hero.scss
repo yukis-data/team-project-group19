@@ -24,6 +24,17 @@
 
 .hero {
   position: relative;
+
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 63px;
+  //   // padding-bottom: 34px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 108px;
+  //   // padding-bottom: 56px;
+  // }
+
+
 }
 
 .hero-title {
@@ -293,9 +304,11 @@
     right: 34px;
   }
 
-  @media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+  @media screen and (min-width: 1280px) {
     top: 156px;
-    right: -20%;
+    right: 115px;
+
   }
 }
 
@@ -355,12 +368,17 @@
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  @media screen and (min-width: 768px) {
+
+  
     display: block;
     background-image: url('../images/hero/slider-lady-tablet1.png');
     width: 168px;
     height: 133px;
-    right: 34px;
+
+    right: 115px;
+
     top: 266px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-lady-tablet1@2x.png');
@@ -368,11 +386,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: block;
     background-image: url('../images/hero/slider-lady-desktop1.png');
     width: 293px;
     height: 232px;
-    right: 878px;
+    right: 115px;
+
     top: 433px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-lady-desktop1@2x.png');
