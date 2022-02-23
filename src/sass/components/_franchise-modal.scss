@@ -1,4 +1,4 @@
-.backdrop {
+.franchise-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   pointer-events: none;
 }
 
-.backdrop--hidden .modal-window {
+.franchise-backdrop--hidden .data-franchise-modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
@@ -34,13 +34,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 520px;
-    padding: 50px 30px;
+    width: 500px;
+    padding: 50px 28px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 620px;
-    padding: 50px 70px;
+    width: 580px;
+    padding: 50px 65px;
   }
 
   border-radius: 4px;
@@ -241,7 +241,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding-left: 30px;
+    padding-left: 25px;
   }
 }
 
@@ -333,10 +333,6 @@
   &:focus {
     background-color: #d41342;
     box-shadow: 0px 4px 4px rgba(116, 23, 23, 0.253);
-  }
-  &:hover .modal-button__icon,
-  &:focus .modal-button__icon {
-    transform: translateX(10px);
   }
 }
 
