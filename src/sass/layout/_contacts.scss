@@ -63,6 +63,7 @@
     margin-left: 31px;
     height: 572px;
     padding: 51px 44px 62px 43px;
+    max-width: 330px;
   }
 }
 
@@ -209,6 +210,9 @@
 
 // <!-- ---------- контейнер для кнопок---------- -- >
 .contacts-buttons-box {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,4 +274,19 @@
   @media screen and (min-width: 768px) {
     margin-left: 15px;
   }
+}
+
+// абсолютное позиционирование
+
+.positioning-container {
+  position: relative;
+  height: 745px;
+}
+
+.contacts-box {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  right: auto;
+  left: 15%;
 }
