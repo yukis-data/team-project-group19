@@ -355,7 +355,7 @@
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (min-width: 768px) and (min-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
     background-image: url('../images/hero/slider-lady-tablet1.png');
     width: 168px;
@@ -366,11 +366,13 @@
       background-image: url('../images/hero/slider-lady-tablet1@2x.png');
     }
   }
-  @media screen and (min-width: 1200px) and (max-width: 1280px){
+
+  @media screen and (min-width: 1200px) {
+    display: block;
     background-image: url('../images/hero/slider-lady-desktop1.png');
     width: 293px;
     height: 232px;
-    right: -20%;
+    right: 878px;
     top: 433px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/hero/slider-lady-desktop1@2x.png');
