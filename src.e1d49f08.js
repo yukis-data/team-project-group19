@@ -5,4 +5,4 @@ document.querySelector(".hero-about__btn").addEventListener("click",function(){v
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/hero-add-text");
 },{"./sass/main.scss":"clu1","./js/hero-add-text":"gz45"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-group19/src.fa19a5e0.js.map
+//# sourceMappingURL=/team-project-group19/src.e1d49f08.js.map
